@@ -1,0 +1,28 @@
+{
+  "name": "tavolorenzo",
+  "version": "1.0.0",
+  "description": "Personal site ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tavolorenzo/personalsite.git"
+  },
+  "author": "Gustavo Lorenzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tavolorenzo/personalsite/issues"
+  },
+  "homepage": "https://github.com/tavolorenzo/personalsite#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.8.2",
+    "mdb-ui-kit": "^4.0.0",
+    "particlesjs": "^2.2.3"
+  }
+}
