@@ -6,11 +6,9 @@
     font-style: normal;
     }
 
-body{
+.card{
     font-family: 'avenirregular', Arial, Verdana, sans-serif;
     color:#3D3D3D;
-}
-.card{
     display: flex;
     flex-direction: row;
     width: 340.16px;

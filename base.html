@@ -4,23 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gustavo Lorenzo Site</title>
+  <title>Gustavo Lorenzo</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-
+</head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-    crossorigin="anonymous"></script>
-  <script src="js\index.js"></script>
   <div class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg"> 
       <!-- Container wrapper -->
       <div class="container-fluid">
         <!-- Toggle button -->
@@ -33,10 +27,10 @@
           <!-- Left links -->
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/works.html">Works and Certifications</a>
+              <a class="nav-link" href="/works.html">Works</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/certifications.html">Certifications</a>
@@ -45,18 +39,18 @@
               <a class="nav-link" href="/projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link" href="/resume.html">Resume</a>
             </li>
+            <!-- class="nav-link active" aria-current="page" href="#"-->
           </ul>
           <!-- Left links -->
         </div>
-        <a class="navbar-brand" href="#">Gustavo Lorenzo</a>
-
+        <a class="navbar-brand d-md-none" href="#">Gustavo Lorenzo</a>
         <!-- Collapsible wrapper -->
       </div>
       <!-- Container wrapper -->
     </nav>
-    <div class="container d-flex justify-content-center" id="pageContent">
+    <div class="d-grid gap-md-2 m-auto text-center" id="pageContent">
     </div>
     <footer class="text-center text-lg-start mt-auto">
       <div class="container d-flex justify-content-center py-3">
@@ -103,7 +97,18 @@
     </footer>
   </div>
 
-  <canvas class="background"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+  <script src="js\index.js"></script>
+
+  <canvas class="background-animation" style="position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;"></canvas>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 
 </body>
