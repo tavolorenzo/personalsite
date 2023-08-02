@@ -19,7 +19,7 @@
     
 }
 .card-front{
-    padding-bottom: 1%;
+    padding-bottom: 3%;
 }
 #left-side-front{
     display: flex;
@@ -36,7 +36,6 @@
 .img-container{
     overflow: hidden;
     float: left;
-    position: relative;
 }
 .fixed-bottom{
     display: flex;
@@ -74,8 +73,6 @@
 
 }
 #solid-color-front-left{
-    position: relative;
-    z-index: 0;
     background-color: #84B026;
     height: 100%;
     width: 100%;
@@ -117,41 +114,4 @@
 }
 #text-container{
     margin: auto 0;
-}
-
-#z-index{
-    position: relative;
-}
-#z-index-left{
-    width: 70%;
-    height: 95%;
-    opacity: 30%;
-    background-color: #84B026;
-}
-#z-index-right{
-    position: relative;
-    left: 0;
-    top:0;
-    width: 100%;
-    height: 95%;
-    opacity: 30%;
-    background-color: #161F30;
-}
-#z-index-img-container{
-    position: relative;
-    z-index: 2;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 80%;
-    background-color: #161F30;
-}
-#z-index-color-container{
-    position: relative;
-    z-index: 1;
-    top:0;
-    left: 0;
-    width: 70%;
-    height: 100%;
-    background-color: white;
 }
