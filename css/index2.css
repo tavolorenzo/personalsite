@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'avenirregular';
+    src: url('/font/12-avenir-95-black-09173-webfont.woff2') format('woff2'),
+         url('/font/12-avenir-95-black-09173-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body{
+    background: #D9D9D9;
+    margin: 0;
+    padding: 5vh;
+    font-family: 'avenirregular';
+}
+h1{
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+p{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.body-container{
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh ;
+    margin: auto auto;
+    border-radius: 25px;
+    border: 1px solid #000;
+    
+}
+.center-div{
+    margin: auto 0 auto auto
+}
+.scroll-down{
+    margin: auto auto 15px auto;
+    max-height: 5vh;
+}
+.dropdown-menu{
+    display: flex;
+    flex-direction: row;
+    margin:0 auto 0 200px;
+    border:none;
+    max-height: 5vh;
+    min-width: 200px;
+    background-color: #88A33B;
+    padding: 5px 5px 5px 10px;
+}
+.menu-text p{
+    display: inline;
+    max-height: 44px;
+    color: #1E2332;
+    font-family: Avenir;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding: 0;
+    margin: 0 30px 0 0;
+}
+.main-content{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    max-height: 80vh;
+    margin:0;
+    padding: 0;
+    gap: 0;
+}
+#profile-img{
+    display: flex;
+    padding-left: 30px;
+    width: 100%;
+    max-width: 460px;
+    height: 100%;
+}
+#profile-img img{
+    height: 100%;
+    max-height: 70vh;
+    width: 100%;
+    object-fit:cover;
+    overflow:hidden;
+}
+#main-text{
+    display: flex;
+    flex-direction: column; 
+    align-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+#group-text{
+    margin: 10vh 15vh auto 8vh ;
+}
+#group-text h1{
+    margin-bottom: 38px;
+}
+#contact-bar{
+    display: flex;
+    flex-direction: row;
+    background-color: #333333;
+    margin:0;
+    justify-content: center;
+}
+.social-media{
+    margin: 6px 25px;
+}
+#contact-label{
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    margin:auto 25px;
+}
+.scroll-down-label{
+    margin:0 auto;
+}
+.social-media:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
