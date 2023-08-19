@@ -1,123 +1,161 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gustavo Lorenzo</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-
-<body>
-  <div class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-lg">
-      <!-- Container wrapper -->
-      <div class="container-fluid">
-        <!-- Toggle button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar"
-          aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse justify-content-center" id="navBar">
-          <!-- Left links -->
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/works.html">Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/certifications.html">Certifications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/resume.html">Resume</a>
-            </li>
-          </ul>
-          <!-- Left links -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="js/index.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>Main | Gustavo Lorenzo</title>
+  </head>
+  <body>
+    <div class="body-container">
+        <div class="dropmenu">
+            <div class="dropmenu-label">
+              <p>Explore</p>
+              <bottom class="dropmenu-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="21"
+                  viewBox="0 0 30 21"
+                  fill="none"
+                >
+                  <path
+                    d="M5.625 0L0 5.625L15 20.625L30 5.625L24.375 0L15 9.375L5.625 0Z"
+                    fill="#1E2332"
+                  />
+                </svg>
+              </bottom>
+            </div>
+            <div class="dropmenu-content">
+              <div class="dropmenu-item">
+                <a>Projects</a>
+              </div>
+              <div class="dropmenu-item">
+                <a>Certifications</a>
+              </div>
+              <div class="dropmenu-item">
+                <a>Resume</a>
+              </div>
+              <div class="dropmenu-item">
+                <a>Contact</a>
+              </div>
+            </div>
+          </div>
+      <div class="main-content">
+        <div id="profile-img">
+          <img src="img/porfile.png"/>
         </div>
-        <a class="navbar-brand d-md-none" href="#">Gustavo Lorenzo</a>
-        <!-- Collapsible wrapper -->
+        <div id="main-text">
+          <div id="group-text">
+            <div>
+              <h1>Hello,</h1>
+            </div>
+            <div>
+                <h1 class="typewrite" data-period="2000" data-type='[ "I am GUSTAVO LORENZO.", "I Love to DEVELOP.", "I am a WEB DEVELOPER." ]'><span class="wrap"></span></h1>
+            </div>
+            <div>
+              <p>
+                My IT career starts on hardware repairs and troubleshooting, in
+                that way I have more than five years of experience in Apple
+                Products being Apple Certificated Technician. Now a days a want
+                to improve my Web Developer Skills.
+              </p>
+            </div>
+          </div>
+          <div id="contact-bar">
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/lorenzogustavo/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+                    <path d="M38.0635 0H2.91881C1.30843 0 0 1.32673 0 2.95541V38.0361C0 39.6648 1.30843 40.9915 2.91881 40.9915H38.0635C39.6739 40.9915 40.9915 39.6648 40.9915 38.0361V2.95541C40.9915 1.32673 39.6739 0 38.0635 0ZM12.3889 35.1356H6.31342V15.5731H12.3981V35.1356H12.3889ZM9.35119 12.9013C7.40226 12.9013 5.82848 11.3184 5.82848 9.37864C5.82848 7.43886 7.40226 5.85593 9.35119 5.85593C11.291 5.85593 12.8739 7.43886 12.8739 9.37864C12.8739 11.3276 11.3001 12.9013 9.35119 12.9013ZM35.163 35.1356H29.0875V25.6197C29.0875 23.3505 29.0417 20.4317 25.9308 20.4317C22.7649 20.4317 22.28 22.9022 22.28 25.455V35.1356H16.2045V15.5731H22.0329V18.2449H22.1153C22.9296 16.7077 24.9151 15.0882 27.8706 15.0882C34.0193 15.0882 35.163 19.1416 35.163 24.4119V35.1356Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="social-media">
+                <a href="https://github.com/tavolorenzo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+                    <path d="M36.5996 0H4.39195C1.96723 0 0 1.96723 0 4.39195V36.5996C0 39.0243 1.96723 40.9915 4.39195 40.9915H36.5996C39.0243 40.9915 40.9915 39.0243 40.9915 36.5996V4.39195C40.9915 1.96723 39.0243 0 36.5996 0ZM25.3726 35.1081C24.604 35.2454 24.3204 34.7696 24.3204 34.3761C24.3204 33.882 24.3387 31.3567 24.3387 29.3162C24.3387 27.8889 23.8629 26.983 23.3048 26.5072C26.6902 26.1321 30.2587 25.6654 30.2587 19.8187C30.2587 18.1534 29.6639 17.3207 28.6941 16.2502C28.8496 15.8568 29.3711 14.2372 28.5385 12.1328C27.2667 11.7393 24.357 13.7706 24.357 13.7706C23.1492 13.432 21.8408 13.2582 20.5507 13.2582C19.2605 13.2582 17.9521 13.432 16.7443 13.7706C16.7443 13.7706 13.8346 11.7393 12.5628 12.1328C11.7302 14.2281 12.2426 15.8476 12.4072 16.2502C11.4374 17.3207 10.9799 18.1534 10.9799 19.8187C10.9799 25.638 14.3928 26.1321 17.7782 26.5072C17.339 26.9007 16.9456 27.5778 16.8083 28.5477C15.9391 28.9411 13.7157 29.6182 12.3889 27.2758C11.5563 25.8301 10.0557 25.7112 10.0557 25.7112C8.57345 25.6929 9.95508 26.6445 9.95508 26.6445C10.9433 27.102 11.6387 28.8587 11.6387 28.8587C12.5262 31.5763 16.7717 30.6613 16.7717 30.6613C16.7717 31.9331 16.79 34.001 16.79 34.3761C16.79 34.7696 16.5155 35.2454 15.7378 35.1081C9.69888 33.086 5.47163 27.3399 5.47163 20.6238C5.47163 12.2243 11.8949 5.84678 20.2945 5.84678C28.6941 5.84678 35.5016 12.2243 35.5016 20.6238C35.5107 27.3399 31.4116 33.0951 25.3726 35.1081ZM16.3966 29.5175C16.2228 29.5541 16.0581 29.4809 16.0398 29.362C16.0215 29.2247 16.1404 29.1058 16.3143 29.0692C16.4881 29.0509 16.6528 29.1241 16.6711 29.243C16.6985 29.362 16.5796 29.4809 16.3966 29.5175ZM15.5274 29.4352C15.5274 29.5541 15.3901 29.6548 15.2071 29.6548C15.0058 29.6731 14.8686 29.5724 14.8686 29.4352C14.8686 29.3162 15.0058 29.2156 15.1888 29.2156C15.3627 29.1973 15.5274 29.2979 15.5274 29.4352ZM14.2738 29.3345C14.2372 29.4535 14.0542 29.5084 13.8987 29.4535C13.7248 29.4169 13.6059 29.2796 13.6425 29.1607C13.6791 29.0417 13.8621 28.9868 14.0176 29.0234C14.2006 29.0783 14.3196 29.2156 14.2738 29.3345ZM13.1484 28.8405C13.066 28.9411 12.8922 28.9228 12.7549 28.7856C12.6177 28.6666 12.5811 28.4928 12.6726 28.4104C12.7549 28.3098 12.9288 28.3281 13.066 28.4653C13.185 28.5843 13.2307 28.7673 13.1484 28.8405ZM12.3158 28.0078C12.2334 28.0627 12.0779 28.0078 11.9772 27.8706C11.8766 27.7333 11.8766 27.5778 11.9772 27.5137C12.0779 27.4314 12.2334 27.4954 12.3158 27.6327C12.4164 27.7699 12.4164 27.9346 12.3158 28.0078ZM11.721 27.1203C11.6387 27.2026 11.5014 27.1569 11.4008 27.0654C11.3001 26.9464 11.2818 26.8092 11.3642 26.7451C11.4465 26.6628 11.5838 26.7085 11.6844 26.8C11.7851 26.919 11.8034 27.0562 11.721 27.1203ZM11.108 26.4432C11.0714 26.5255 10.9524 26.5438 10.8518 26.4798C10.7328 26.4249 10.6779 26.3242 10.7145 26.2419C10.7511 26.187 10.8518 26.1595 10.9707 26.2053C11.0897 26.2693 11.1446 26.37 11.108 26.4432Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            <div id="contact-label">
+              <a>Contact</a>
+            </div>
+            <div class="social-media">
+                <a href="https://twitter.com/tavo_lorenzo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+                <path d="M36.5996 0H4.39195C1.96723 0 0 1.96723 0 4.39195V36.5996C0 39.0243 1.96723 40.9915 4.39195 40.9915H36.5996C39.0243 40.9915 40.9915 39.0243 40.9915 36.5996V4.39195C40.9915 1.96723 39.0243 0 36.5996 0ZM32.1253 14.53C32.1436 14.7862 32.1436 15.0516 32.1436 15.3078C32.1436 23.2407 26.1046 32.3815 15.0699 32.3815C11.6661 32.3815 8.5094 31.3933 5.85593 29.6914C6.34087 29.7463 6.80752 29.7646 7.30161 29.7646C10.1106 29.7646 12.6909 28.813 14.7496 27.2026C12.1145 27.1477 9.90018 25.4184 9.14074 23.0394C10.0649 23.1767 10.8975 23.1767 11.8491 22.9296C9.10414 22.3715 7.04541 19.9559 7.04541 17.0371V16.9639C7.84145 17.4122 8.77474 17.6867 9.75378 17.7233C8.93068 17.1758 8.25593 16.4331 7.78973 15.5614C7.32353 14.6896 7.0804 13.7161 7.08201 12.7275C7.08201 11.6112 7.37481 10.5864 7.89635 9.69888C10.8518 13.3405 15.2895 15.7195 20.267 15.9757C19.4161 11.904 22.463 8.6009 26.1229 8.6009C27.8523 8.6009 29.4077 9.32374 30.5057 10.4949C31.8599 10.2387 33.1592 9.73548 34.3121 9.04924C33.8637 10.44 32.9213 11.6112 31.6769 12.3524C32.8847 12.2243 34.0559 11.8857 35.1356 11.4191C34.3212 12.6177 33.2964 13.6791 32.1253 14.53Z" fill="white"/>
+                </svg>
+                </a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/tavo_lorenzo/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+                <path d="M20.4958 15.6152C19.5305 15.6156 18.5871 15.9021 17.7848 16.4386C16.9824 16.9751 16.3571 17.7375 15.988 18.6293C15.6189 19.5211 15.5225 20.5024 15.711 21.449C15.8996 22.3956 16.3645 23.2651 17.0472 23.9475C17.7298 24.6298 18.5994 25.0945 19.5461 25.2827C20.4928 25.4708 21.474 25.3741 22.3657 25.0046C23.2574 24.6352 24.0195 24.0096 24.5557 23.2071C25.0919 22.4045 25.3781 21.461 25.3781 20.4958C25.3772 19.2013 24.8624 17.9602 23.9469 17.0451C23.0315 16.13 21.7902 15.6157 20.4958 15.6152ZM31.9066 11.8637C31.6581 11.2341 31.2829 10.6622 30.8043 10.1836C30.3256 9.70491 29.7538 9.32972 29.1241 9.08126C27.2026 8.32274 22.6277 8.49293 20.4958 8.49293C18.3638 8.49293 13.7935 8.31633 11.8665 9.08126C11.2368 9.32972 10.6649 9.70491 10.1863 10.1836C9.70766 10.6622 9.33247 11.2341 9.08401 11.8637C8.3264 13.7852 8.49567 18.3647 8.49567 20.4948C8.49567 22.6249 8.3264 27.199 9.08767 29.1268C9.33613 29.7565 9.71132 30.3284 10.19 30.807C10.6686 31.2857 11.2405 31.6609 11.8702 31.9093C13.7916 32.6678 18.3666 32.4977 20.4994 32.4977C22.6322 32.4977 27.2008 32.6743 29.1278 31.9093C29.7574 31.6609 30.3293 31.2857 30.8079 30.807C31.2866 30.3284 31.6618 29.7565 31.9102 29.1268C32.6743 27.2054 32.4986 22.6258 32.4986 20.4958C32.4986 18.3657 32.6743 13.7925 31.9102 11.8647L31.9066 11.8637ZM20.4958 27.9987C19.0118 27.9987 17.5612 27.5586 16.3274 26.7342C15.0935 25.9098 14.1318 24.738 13.564 23.367C12.9961 21.996 12.8475 20.4874 13.137 19.032C13.4265 17.5766 14.1411 16.2397 15.1904 15.1904C16.2397 14.1411 17.5766 13.4265 19.032 13.137C20.4874 12.8475 21.996 12.9961 23.367 13.564C24.738 14.1318 25.9098 15.0935 26.7342 16.3274C27.5586 17.5612 27.9987 19.0118 27.9987 20.4958C27.9999 21.4814 27.8066 22.4576 27.43 23.3684C27.0534 24.2793 26.5007 25.1068 25.8038 25.8038C25.1068 26.5007 24.2793 27.0534 23.3684 27.43C22.4576 27.8066 21.4814 27.9999 20.4958 27.9987ZM28.3079 14.4294C27.9615 14.4296 27.6228 14.327 27.3347 14.1347C27.0466 13.9424 26.822 13.6689 26.6893 13.3489C26.5566 13.0289 26.5218 12.6768 26.5893 12.337C26.6567 11.9972 26.8235 11.6851 27.0683 11.4401C27.3132 11.195 27.6253 11.0282 27.965 10.9605C28.3048 10.8929 28.6569 10.9275 28.977 11.06C29.297 11.1925 29.5706 11.417 29.7631 11.705C29.9556 11.993 30.0583 12.3317 30.0583 12.6781C30.0593 12.9081 30.0148 13.1361 29.9275 13.3489C29.8401 13.5617 29.7116 13.7552 29.5493 13.9183C29.3871 14.0813 29.1942 14.2107 28.9818 14.299C28.7694 14.3874 28.5416 14.4329 28.3116 14.433L28.3079 14.4294ZM36.5996 0H4.39195C3.22713 0 2.11002 0.462722 1.28637 1.28637C0.462722 2.11002 0 3.22713 0 4.39195L0 36.5996C0 37.7644 0.462722 38.8815 1.28637 39.7051C2.11002 40.5288 3.22713 40.9915 4.39195 40.9915H36.5996C37.7644 40.9915 38.8815 40.5288 39.7051 39.7051C40.5288 38.8815 40.9915 37.7644 40.9915 36.5996V4.39195C40.9915 3.22713 40.5288 2.11002 39.7051 1.28637C38.8815 0.462722 37.7644 0 36.5996 0ZM35.0331 26.5347C34.9151 28.8798 34.3798 30.9577 32.6678 32.6651C30.9559 34.3725 28.8798 34.9187 26.5374 35.0303C24.1209 35.1667 16.8761 35.1667 14.4596 35.0303C12.1145 34.9123 10.0438 34.3761 8.32914 32.6651C6.61445 30.9541 6.07553 28.8752 5.9639 26.5347C5.82756 24.1173 5.82756 16.8715 5.9639 14.4568C6.08193 12.1117 6.61079 10.0338 8.32914 8.3264C10.0475 6.61903 12.1236 6.07919 14.4596 5.96756C16.8761 5.83122 24.1209 5.83122 26.5374 5.96756C28.8825 6.08559 30.9596 6.62177 32.6678 8.3328C34.3761 10.0438 34.9215 12.1227 35.0331 14.4678C35.1694 16.8761 35.1694 24.1154 35.0331 26.5347Z" fill="white"/>
+                </svg>
+                </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Container wrapper -->
-    </nav>
-    <div class="container m-auto" id="pageContent">
-      <div class="p-5">
-        <img src="img/porfile-2.jpg" class="img-fluid rounded-circle" alt="Porfile Picture"
-          style="max-width: 200px;">
+      <div class="scroll-down-label">
+        <h2>Look my projects</h2>
       </div>
-      <div id="about">
-        I ́m a 26-year-old Uruguayan junior developer, worked the last six years on IT and studied the last three. My IT career starts on hardware repairs and troubleshooting, in that way I have more than five years of experience in Apple Products being Apple Certificated Technician. These experience make me patient, improve my communication skills and effective listening. Now a days a want to improve my Developer Skills, in the last 3 years I ́ve being studied Web Develop by my self-training and Governmental programs in Uruguay.
+      <div class="scroll-down">
+        <div>
+            <a href="projects.html" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="63"
+              height="44"
+              viewBox="0 0 63 44"
+              fill="none"
+            >
+              <path
+                d="M11.8125 0L0 11.8125L31.5 43.3125L63 11.8125L51.1875 0L31.5 19.6875L11.8125 0Z"
+                fill="#1E2332"
+                fill-opacity="0.5"
+              />
+            </svg>
+            </a>
+          </div>
+          <div class="scroll-down-hidden">
+            <a href="projects.html" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="63"
+                  height="44"
+                  viewBox="0 0 63 44"
+                  fill="none"
+                >
+                  <path
+                    d="M11.8125 0L0 11.8125L31.5 43.3125L63 11.8125L51.1875 0L31.5 19.6875L11.8125 0Z"
+                    fill="#1E2332"
+                    fill-opacity="0.5"
+                  />
+                </svg>
+                </a>
+          </div>
+          <div class="scroll-down-hidden">
+            <a href="projects.html" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="63"
+                  height="44"
+                  viewBox="0 0 63 44"
+                  fill="none"
+                >
+                  <path
+                    d="M11.8125 0L0 11.8125L31.5 43.3125L63 11.8125L51.1875 0L31.5 19.6875L11.8125 0Z"
+                    fill="#1E2332"
+                    fill-opacity="0.5"
+                  />
+                </svg>
+                </a>
+          </div>
       </div>
     </div>
-    <footer class="text-center text-lg-start mt-auto">
-      <div class="container d-flex justify-content-center py-3">
-        <a
-          class="btn btn-dark btn-lg btn-floating mx-2"
-          role="button"
-          href="https://www.linkedin.com/in/lorenzogustavo/"
-        >
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a
-        class="btn btn-dark btn-lg btn-floating mx-2"
-        role="button"
-        href="https://github.com/tavolorenzo"
-        >
-        <i class="fa-brands fa-github"></i>
-        </a>
-        <a
-        class="btn btn-dark btn-lg btn-floating mx-2"
-        role="button"
-        href="https://www.instagram.com/tavo_lorenzo/"
-        >
-        <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a
-        class="btn btn-dark btn-lg btn-floating mx-2"
-        role="button"
-        href="https://twitter.com/tavo_lorenzo"
-        >
-        <i class="fa-brands fa-twitter"></i>
-        </a>
-      </div>
-      <!-- Copyright -->
-      <div
-        class="text-center text-white p-2"
-        style="background-color: #6b787f"
-      >
-        © 2023 Copyright:
-        <a class="text-white" href="https://tavolorenzo.netlify.app" target="_blank"
-          >tavolorenzo.netlify.app</a
-        >
-      </div>
-      <!-- Copyright -->
-    </footer>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-    crossorigin="anonymous"></script>
-     <!-- Particles 
-    <script src="js\index.js"></script>
-
-    <canvas
-      class="background-animation"
-      style="position: absolute; top: 0; left: 0; z-index: -1"
-    ></canvas>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-    -->
-</body>
-
+  </body>
 </html>

@@ -34,34 +34,66 @@ p{
     border: 1px solid #000;
     
 }
-.center-div{
-    margin: auto 0 auto auto
+.dropmenu{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto 0 200px;
+    width: 200px;
+    height: 5vh;
 }
-.scroll-down{
-    margin: auto auto 15px auto;
-    max-height: 5vh;
+.dropmenu-content{
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    top: 10vh;
+    width: 200px;
+    z-index: 1;
 }
-.dropdown-menu{
+.dropmenu-label{
     display: flex;
     flex-direction: row;
-    margin:0 auto 0 200px;
     border:none;
     max-height: 5vh;
-    min-width: 200px;
     background-color: #88A33B;
     padding: 5px 5px 5px 10px;
 }
-.menu-text p{
-    display: inline;
-    max-height: 44px;
+.dropmenu-btn{
+    margin: auto 0 auto auto
+}
+.dropmenu-item{
+    border:none;
+    background-color: #88A33B;
+    margin-top: 5px;
+    padding: 5px 5px 5px 10px;
+    height: 4vh;
+}
+.dropmenu-label p{
     color: #1E2332;
-    font-family: Avenir;
+    font-family: 'avenirregular';
     font-size: 26px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    padding: 0;
     margin: 0 30px 0 0;
+}
+.dropmenu-item a{
+    float: left;
+    color: #1E2332;
+    font-family: 'avenirregular';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.dropmenu:hover .dropmenu-content{
+    display: block;
+}
+.dropmenu-content .dropmenu-item:hover{
+    background-color: #466F6F;
+}
+.dropmenu-item:hover a{
+    color: #FFFFFF;
 }
 .main-content{
     display:flex;
@@ -115,9 +147,25 @@ p{
     font-size: 36px;
     margin:auto 25px;
 }
-.scroll-down-label{
-    margin:0 auto;
-}
 .social-media:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.scroll-down-label{
+    margin:0 auto;
+    opacity: 0.7;
+}
+.scroll-down{
+    margin: auto auto 15px auto;
+    height: 5vh;
+    opacity: 0.5;
+}
+.scroll-down-hidden{
+    display: none;
+}
+.scroll-down:hover .scroll-down-hidden{
+    display: block;
+    margin: -20px auto;
+}
+.scroll-down:hover{
+    opacity: 0.8;
 }
