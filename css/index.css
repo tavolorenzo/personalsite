@@ -1,171 +1,83 @@
-@font-face {
-    font-family: 'avenirregular';
-    src: url('/font/12-avenir-95-black-09173-webfont.woff2') format('woff2'),
-         url('/font/12-avenir-95-black-09173-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    }
-
-body{
-    background: #D9D9D9;
-    margin: 0;
-    padding: 5vh;
-    font-family: 'avenirregular';
+.grid-container{
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+    ". header ."
+    "content content content"
+    ". footer ."
+    ;
 }
-h1{
-    color: #000;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-}
-p{
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-}
-.body-container{
-    display: flex;
-    flex-direction: column;
-    max-height: 90vh ;
-    margin: auto auto;
-    border-radius: 25px;
-    border: 1px solid #000;
-    
-}
-.dropmenu{
-    display: flex;
-    flex-direction: column;
-    margin:0 auto 0 200px;
-    width: 200px;
-    height: 5vh;
-}
-.dropmenu-content{
-    display: none;
-    position: absolute;
-    overflow: hidden;
-    backdrop-filter: blur(20px);
-    top: 10vh;
-    width: 200px;
-    z-index: 1;
-}
-.dropmenu-label{
-    display: flex;
-    flex-direction: row;
-    border:none;
-    max-height: 5vh;
-    background-color: #88A33B;
-    padding: 5px 5px 5px 10px;
-}
-.dropmenu-btn{
-    margin: auto 0 auto auto
-}
-.dropmenu-item{
-    border:none;
-    background-color: #88A33B;
-    margin-top: 5px;
-    padding: 5px 5px 5px 10px;
-    height: 4vh;
-}
-.dropmenu-label p{
-    color: #1E2332;
-    font-family: 'avenirregular';
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    margin: 0 30px 0 0;
-}
-.dropmenu-item a{
-    float: left;
-    color: #1E2332;
-    font-family: 'avenirregular';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-}
-.dropmenu:hover .dropmenu-content{
-    display: block;
-}
-.dropmenu-content .dropmenu-item:hover{
-    background-color: #466F6F;
-}
-.dropmenu-item:hover a{
-    color: #FFFFFF;
-}
-.main-content{
-    display:flex;
-    flex-direction: row;
-    width:100%;
-    max-height: 80vh;
-    margin:0;
-    padding: 0;
-    gap: 0;
+.content{
+    position: relative;
 }
 #profile-img{
-    display: flex;
-    padding-left: 30px;
-    width: 100%;
-    max-width: 460px;
+    position: absolute;
+    left: 10%;
+    bottom: 0;
     height: 100%;
+    max-height: auto;
+    width: auto;
+
 }
 #profile-img img{
     height: 100%;
-    max-height: 70vh;
-    width: 100%;
+    width: auto;
     object-fit:cover;
     overflow:hidden;
 }
-#main-text{
-    display: flex;
-    flex-direction: column; 
-    align-content: space-between;
-    padding: 0;
-    margin: 0;
+#content-text{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: 
+    ". group-text"
+    "contact-bar contact-bar";
+    height: 100%;
 }
 #group-text{
-    margin: 10vh 15vh auto 8vh ;
+    grid-area: group-text;
+    margin: 10% 15%;
+    text-align: left;
 }
 #group-text h1{
     margin-bottom: 38px;
 }
 #contact-bar{
+    grid-area: contact-bar;
     display: flex;
     flex-direction: row;
-    background-color: #333333;
+    background-color: #3d3d3d;
     margin:0;
-    justify-content: center;
-}
-.social-media{
-    margin: 6px 25px;
-}
-#contact-label{
+    justify-content: space-evenly;
     color: #FFF;
     text-align: center;
     font-size: 36px;
-    margin:auto 25px;
+    gap: 25px;
+    padding: 10px 10px 10px 30%;
+    min-height: 46px;
+    max-width: 100%;
+    align-self: end;
+}
+#contact-label:hover{
+    color: #88A33B;
 }
 .social-media:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: #88A33B;
+
 }
-.scroll-down-label{
-    margin:0 auto;
-    opacity: 0.7;
+#menu{
+    justify-self: start;
 }
-.scroll-down{
-    margin: auto auto 15px auto;
-    height: 5vh;
-    opacity: 0.5;
+#menu > .dropmenu-content{
+    left: 0;
 }
-.scroll-down-hidden{
-    display: none;
+#menu > .dropmenu-content > .dropmenu-item {
+    background-color: #88A33B;
+    color: #1E2332;
+    text-align: left;
 }
-.scroll-down:hover .scroll-down-hidden{
-    display: block;
-    margin: -20px auto;
-}
-.scroll-down:hover{
-    opacity: 0.8;
+#menu > .dropmenu-label {
+    background-color: #88A33B;
+    width: 200px;
+    box-sizing: border-box;
 }

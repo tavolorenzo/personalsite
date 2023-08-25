@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'avenirregular';
+    src: url('/font/12-avenir-95-black-09173-webfont.woff2') format('woff2'),
+         url('/font/12-avenir-95-black-09173-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+html{
+    font-size: 16px;
+    font-family: 'avenirregular';
+    text-align: center;
+    line-height: normal;
+    color: #000;
+}
+body{
+    background: #D9D9D9;
+    margin: 0;
+    padding: 5vh;
+
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: unset;
+}
+h1{
+    font-size: 2.25rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1rem;
+}
+.grid-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+    "header"
+    "content"
+    "footer";
+    display: grid;
+    width: 95vw;
+    max-width: 95vw;
+    height: 90vh;
+    max-height: 90vh;
+    margin: auto;
+    border-radius: 25px;
+    border: 1.5px solid #000;
+    box-sizing: border-box;
+}
+.header{
+    grid-area:header;
+}
+.content{
+    display: flex;
+    grid-area:content;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+.footer{
+    grid-area:footer;
+}
+.btn{
+    display: inline-block;
+    width: fit-content;
+    border-radius: 15px;
+    background: #466F6F;
+    padding: 10px 20px;
+    color: #FFF;
+    font-size: 24px;
+}
+.btn:hover{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.scroll-down-label{
+    margin:auto;
+    opacity: 0.7;
+}
+.scroll-down{
+    position: absolute;
+    bottom: 5px;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    height: 5vh;
+    opacity: 0.5;
+    font-size: 60px;
+    color: #1E233280;
+}
+.scroll-down-hidden{
+    display: none;
+}
+.scroll-down:hover .scroll-down-hidden{
+    display: block;
+    margin: -45px auto;
+}
+.scroll-down:hover{
+    opacity: 0.8;
+}
+.dropmenu{
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    width: min-content;
+}
+.dropmenu-content{
+    position: absolute;
+    top:0;
+    width: 200px;
+    display: none;
+    backdrop-filter: blur(20px);
+    z-index: 2;
+}
+.dropmenu-label{
+    display: flex;
+    border:none;
+    box-sizing: content-box;
+    padding: 5px;
+    text-align: center;
+}
+.dropmenu-btn{
+    margin: 5px auto;
+    font-size:26px;
+}
+.dropmenu-item{
+    border:none;
+    padding: 5px 5px 5px 10px;
+    height: 4vh;
+}
+.dropmenu-label p{
+    color: #1E2332;
+    font-size: 26px;
+    margin:5px;
+}
+.dropmenu-item a{
+    display: block;
+    font-family: 'avenirregular';
+    font-size: 24px;
+    width: 100%;
+}
+.dropmenu:hover .dropmenu-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.dropmenu-content .dropmenu-item:hover{
+    background-color: #466F6F !important;
+}
+.dropmenu-item:hover a{
+    color: #FFFFFF;
+}
+#main-menu{
+    justify-self: start;
+}
+#main-menu > .dropmenu-content{
+    left: 0;
+}
+#main-menu > .dropmenu-content > .dropmenu-item {
+    background-color: #88A33B;
+    color: #1E2332;
+    text-align: left;
+}
+#main-menu > .dropmenu-label {
+    background-color: #88A33B;
+    flex-direction: column;
+    width: 35px;
+}
+#main-menu > .dropmenu-label p{
+    writing-mode: vertical-lr;
+}
+#main-menu > .dropmenu-content > .dropmenu-label p{
+    font-size: unset;
+}
+#social-menu{
+    justify-self: end;
+}
+#social-menu > .dropmenu-content{
+    right: 0;
+}
+#social-menu > .dropmenu-content > .dropmenu-item {
+    background-color: #3d3d3d;
+    color: #FFF;
+    text-align: right;
+}
+#social-menu > .dropmenu-label {
+    background-color: #3d3d3d;
+    color: #FFF;
+    flex-direction: column;
+    width: 35px;
+}

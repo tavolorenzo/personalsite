@@ -1,0 +1,64 @@
+.project-preview{
+    display: flex;
+    align-items: end;
+    border-radius: 20px;
+    background-image: url("/files/img/optosalud.jpg");
+    background-size: cover;
+}
+.project-description{
+    display: flex;
+    height: fit-content;
+    background: rgba(217, 217, 217, 0.50);
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    font-size: 24px;
+    backdrop-filter: blur(5px);
+}
+.project-description p{
+    margin: 40px 20px;
+    font-size: 24px;
+}
+.grid-container{
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+    "header header header"
+    "left content right"
+    "footer footer footer"
+    ;
+}
+.left{
+    display: grid;
+    position: relative;
+    grid-area: left;
+    
+}
+.right{
+    display: grid;
+    position: relative;
+    grid-area: right;
+    
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto min-content;
+    grid-template-areas: 
+    "project"
+    "btn-group";
+}
+.btn-group{
+    display: flex;
+    grid-area: btn-group;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+}
+#previous-next-btn{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 60px;
+    color: #1E233280;
+   }
